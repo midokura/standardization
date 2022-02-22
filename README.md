@@ -1,8 +1,8 @@
 # Midokura Style Guide
 
-Midokura development ecosystem integrates multiple projects, programming languages, and architectures. This repository aims to enforce Midokura employees to have a similar way to code, test, and deploy Midokuras solutions.
+Midokura development ecosystem integrates multiple projects, programming languages, and architectures. This repository aims to help Midokura employees to adopt a similar way to code, test, and deploy Midokuras solutions.
 
-The Midokura Style Guide is a space to discuss which code, test, and deploy practices every project should adopt to deliver a high-quality solution to solve Midokuras customers' needs. 
+The Midokura Style Guide is a space to discuss which code, test, and deploy practices every project should adopt to deliver high-quality user-centric solutions to Midokuras clients and customers. 
 
 ## TODO
 
