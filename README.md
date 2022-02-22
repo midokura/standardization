@@ -6,13 +6,6 @@ The Midokura Style Guide is a space to discuss which code, test, and deploy prac
 
 ## TODO
 
-- [ ] .github
-    - [ ] ISSUE_TEMPLATE
-        - [ ] bug_report_template
-    - [ ] PULL_REQUEST_TEMPLATE
-        - [ ] pull_request_template
-
-
 - [ ] python
     - [ ] idea
     - [ ] .vscode
