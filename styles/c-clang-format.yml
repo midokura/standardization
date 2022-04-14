@@ -1,0 +1,60 @@
+Language: Cpp
+BasedOnStyle: LLVM
+IndentWidth: 8
+ConstructorInitializerIndentWidth: 8
+ContinuationIndentWidth: 8
+PointerAlignment: Right
+ColumnLimit: 79
+TabWidth: 8
+UseTab: ForContinuationAndIndentation
+AlignConsecutiveMacros: true
+AlwaysBreakAfterReturnType: TopLevelDefinitions
+ForEachMacros: ["TAILQ_FOREACH", "TAILQ_FOREACH_SAFE"]
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterControlStatement: Never
+  AfterCaseLabel: false
+  AfterEnum: false
+  AfterFunction: true
+  AfterStruct: false
+  AfterUnion: false
+  AfterExternBlock: false
+  BeforeElse: false
+  BeforeWhile: false
+  SplitEmptyFunction: true
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: false
+SpaceAfterCStyleCast: false
+SpaceAfterLogicalNot: false
+SortIncludes: true
+IndentCaseBlocks: true
+IndentCaseLabels: false
+IncludeBlocks: Regroup
+# Disable file-to-main-include by specifying a regex which never match
+IncludeIsMainRegex: '/INEXISTENT$'
+IncludeCategories:
+  - Regex: '<nuttx/.*'
+    Priority: 1
+  - Regex: '<sys/.*'
+    Priority: 2
+  # 3rd party libraries
+  - Regex: '<mbedtls/.*'
+    Priority: 4
+  - Regex: '<mqtt\.h>'
+    Priority: 4
+  - Regex: '<wasm_export.h>'
+    Priority: 4
+  # private fork of 3rd party libraries
+  - Regex: '"webclient/.*'
+    Priority: 5
+  - Regex: '"netlib/.*'
+    Priority: 5
+  - Regex: '"azure/.*'
+    Priority: 5
+  # system headers
+  - Regex: '<.*'
+    Priority: 3
+  - Regex: '".*'
+    Priority: 6
+  - Regex: '.*'
+    Priority: 7
